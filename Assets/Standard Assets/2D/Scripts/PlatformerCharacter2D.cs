@@ -51,7 +51,7 @@ namespace UnityStandardAssets._2D
 
 		private void Update(){
 			// Debug CornerGrab
-			if (m_Rigidbody2D.velocity.magnitude <= 0) 
+			if (m_Rigidbody2D.velocity.magnitude <= 0 && Time.timeSinceLevelLoad > 1) 
 				m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
 		}
 
