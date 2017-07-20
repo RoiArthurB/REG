@@ -17,6 +17,8 @@ public class HUDScript : MonoBehaviour {
 
 	void OnDisable(){
 		PlayerPrefs.SetInt ("Score", (int)playerScore);
+		if (PlayerPrefs.GetInt ("BestScore") < (int)playerScore)
+			PlayerPrefs.SetInt ("BestScore", (int)playerScore);
 	}
 
 	void OnGUI(){
