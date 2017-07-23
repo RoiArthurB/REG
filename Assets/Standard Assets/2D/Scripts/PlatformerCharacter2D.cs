@@ -43,16 +43,16 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
-
-			// Double jump
-			if (m_Grounded)
-				doubleJump = false;
         }
 
 		private void Update(){
 			// Debug CornerGrab
 			if (m_Rigidbody2D.velocity.magnitude <= 0 && Time.timeSinceLevelLoad > 1) 
 				m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+
+			// Double jump
+			if (m_Grounded)
+				doubleJump = false;
 		}
 
         public void Move(float move, bool crouch, bool jump)
