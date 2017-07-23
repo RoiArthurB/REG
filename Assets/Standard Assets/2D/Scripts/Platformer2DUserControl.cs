@@ -16,7 +16,7 @@ namespace UnityStandardAssets._2D
             m_Character = GetComponent<PlatformerCharacter2D>();
         }
 
-
+		/*
         private void Update()
         {
             if (!m_Jump)
@@ -26,7 +26,7 @@ namespace UnityStandardAssets._2D
 					m_Jump = true;
             }
         }
-
+*/
 
         private void FixedUpdate()
         {
