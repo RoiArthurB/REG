@@ -55,7 +55,7 @@ namespace UnityStandardAssets._2D
 				doubleJump = false;
 		}
 
-        public void Move(float move, bool crouch, bool jump)
+        public void Move(float move, bool jump)
         {
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
@@ -65,18 +65,19 @@ namespace UnityStandardAssets._2D
 
                 // Move the character
                 m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
-            }
+			}
 
             // If the player should jump...
-			if ((m_Grounded || !doubleJump) && jump/* && m_Anim.GetBool("Ground")*/)
+			if ((m_Grounded || !doubleJump) && jump)
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
 
+				// For double jump
 				m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, 0);
 
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
 				if (!m_Grounded)
 					doubleJump = true;

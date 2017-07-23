@@ -42,7 +42,7 @@ namespace UnityStandardAssets._2D
 			 *
 			 */
 
-			m_Character.Move(1, false, m_Jump);
+			m_Character.Move(1, m_Jump);
 
             m_Jump = false;
         }
