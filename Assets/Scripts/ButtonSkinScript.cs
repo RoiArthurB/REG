@@ -11,6 +11,9 @@ public class ButtonSkinScript : MonoBehaviour {
 	void Start(){
 		GetComponent<Button> ().onClick.AddListener (TaskOnClick);
 		buttons = transform.parent.gameObject.GetComponentsInChildren<Button> ();
+
+		if(PlayerPrefs.GetInt("SkinNumber") == skinNumber)
+			GetComponent<RectTransform> ().sizeDelta = new Vector2 (75, 75);
 	}
 
 	void TaskOnClick(){
