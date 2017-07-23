@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61845265698141350}
   - component: {fileID: 114163528495787648}
   - component: {fileID: 95678880473191060}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PowerUpGold
   m_TagString: Untagged
   m_Icon: {fileID: 0}

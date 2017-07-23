@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61479226588805302}
   - component: {fileID: 114555837300150218}
   - component: {fileID: 95126618423683962}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PowerUpBronze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacd7d8ff47a56d419aa7dd458ca2cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusScore: 10
 --- !u!212 &212508828313474154
 SpriteRenderer:
   m_ObjectHideFlags: 1
