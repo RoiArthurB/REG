@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 759423448}
   - component: {fileID: 759423447}
   - component: {fileID: 759423446}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Destroyer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3044,7 +3044,7 @@ GameObject:
   - component: {fileID: 2003104150}
   - component: {fileID: 2003104149}
   - component: {fileID: 2003104148}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
